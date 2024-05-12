@@ -1,4 +1,7 @@
 from .builder import DATASETS, PIPELINES, build_dataloader, build_dataset
+
+from .mask import MaskDataset
+
 from .cityscapes import CityscapesDataset
 from .coco import CocoDataset
 from .custom import CustomDataset
@@ -13,7 +16,7 @@ from .wider_face import WIDERFaceDataset
 from .xml_style import XMLDataset
 
 __all__ = [
-    'CustomDataset', 'XMLDataset', 'CocoDataset', 'DeepFashionDataset',
+    'MaskDataset', 'CustomDataset', 'XMLDataset', 'CocoDataset', 'DeepFashionDataset',
     'VOCDataset', 'CityscapesDataset', 'LVISDataset', 'LVISV05Dataset',
     'LVISV1Dataset', 'GroupSampler', 'DistributedGroupSampler',
     'DistributedSampler', 'build_dataloader', 'ConcatDataset', 'RepeatDataset',
